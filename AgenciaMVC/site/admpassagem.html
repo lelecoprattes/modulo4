@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="estilogeral.css.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+    <body>
+<!-- JAVA DA CLASS BTN-CONTATO-->
+        <script>
+            function btncontato() {
+                alert('VOCÊ ESTARA SAINDO DO CADRASTRO. PARA VOLTAR AO CADASTRO VÁ A PAGINA INICAL E CLICK NO BATÃO ADMINISTRADOR PARA RETORNAR');
+            }
+        </script>
+
+<!--menu de navegação-->
+            <header id="navegacao">
+                <div class="container">
+                <div class="flex">
+                <a href="agenciaindex.html" onclick="btncontato()">TUORBRASIL (SAIR)</a>
+                <nav>
+                <ul>
+                    <li><a  href="admcliente.html" >NOVOS CLIENTES</a></li>
+                    <li><a  href="admpassagem.html">PASSAGENS DOS CLIENTES</a></li>
+                    <li><a  href="admpedido.html">PEDIDOS DOS CLIENTES</a></li>
+                </ul>
+                </nav>
+                <div class="btn-contato">
+                    <a href="downloads.html"><button onclick="btncontato()">SUPORTE(ADM)</button></a>
+                </div><!--btn-contato-->
+                </div><!--flex-->
+                </div><!--container-->
+        </header>
+        <section class="banner"><!--imagem fundo do site-->
+            
+        <h1><span>TUORBRASIL</span> CADASTRO D<span>E NOVAS PASSAGENS </span></h1>
+        
+    </section>
+
+<!-- formulario de cadastro de novos passagem-->
+
+        <form>
+            <h2>CADASTRAR NOVA PASSAGEM</h2>
+
+            <form action="processar_formulario.php" method="POST">
+                <label for="nome">Destinos:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+            
+                <label for="email">Data da Passagem:</label>
+                <input type="email" id="email" name="email" required><br><br>
+            
+                <label for="mensagem">observações:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="50" required></textarea><br><br>
+                
+                <input type="submit" value="Enviar">
+        </form>
+
+<!--RODAPE-->
+        <footer>
+            <div id="footer_content">
+            <div id="footer_contacts">
+                <H1>TURBRASIL</H1>
+                <p>Descubra Novos Mundos</p>
+                <div id="footer_social_media">
+                <a href="contatos.html" class="footer_link" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="contatos.html" class="footer_link" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="contatos.html" class="footer_link" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                <a href="contatos.html" class="footer_link" id="tik-tok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                </div>
+                </div>
+            <ul class="footer-list">
+                <li>
+                <h3>Blog</h3>
+                </li>
+                <li>
+                <a href="empresa.html" class="footer-list">Quem Somos</a>
+                </li>
+                <li>
+                <a href="pedidos.html" class="footer-list">Pedidos</a>
+                </li>
+                <li>
+                <a href="contatos.html" class="footer-list">Problemas Tecnicos</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                <h3>Produtos</h3>
+                </li>
+                <li>
+                <a href="downloads.html" class="footer-list">Android</a>
+                </li>
+                <li>
+                <a href="downloads.html" class="footer-list">Descktop</a>
+                </li>
+                <li>
+                <a href="downloads.html" class="footer-list">Apple</a>
+                </li>
+            </ul>
+        <div id="footer_subscribe">
+            <h3> Escreva-se</h3>
+            <p> coloque seu e-mal e receba nossas promoçôes</p>
+            <div id="input_group">
+            <input type="email" id="email">
+            <button>
+                <i class="fa-regular fa-envelope"></i>
+            </button>
+            </div>
+        </div>
+            </div>
+            <div id="footer_copyright">
+            &#169
+            2023 todos os diretos resevados.
+            </div>
+        </footer>
+                    <script src="animacao.js"></script>      
+            </body>
+</html>
